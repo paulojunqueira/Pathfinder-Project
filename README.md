@@ -13,7 +13,7 @@ Example
 shape = 10 # Defines a 10 x 10 maze 
 start = (2,2) # Start point
 end = (5,9) # End Point
-numberWalls = 10 # Defines number of random walls created
+numberWalls = 8 # Defines number of random walls created
 
 maze = pathFinder.PathFinderClass(shape,start,end) # Initializes object
 example1 = maze.run(numberWalls,False) # Calling the run function
