@@ -20,10 +20,10 @@ example1 = maze.run(numberWalls,False) # Calling the run function
 example1["finalMap"].show() # Ploting Path and Maze
 ```
 Below is the result's plot. Walls are colored in gray and best Path in brown:
-![](Example1.png)
+![](Figure/Example1.png)
 
 
 Below is Exemplified a 50 by 50 maze as a gif:
-![](Example.gif)
+![](Figure/Example.gif)
 
 For more references, try Dijkstra algorithm, A* search etc.
