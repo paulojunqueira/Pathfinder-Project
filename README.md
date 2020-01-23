@@ -1,6 +1,6 @@
 # Pathfinder-Project
 
-This is a Pathfinder algorithm project developed in python. It is still on an initial phase therefore it may contain some bugs and has lots of room for improvements :).
+This is a Pathfinder algorithm project developed in python. It is still on an initial phase, therefore, it may contain some bugs and besides has lots of room for improvements
 
 To run the program, create the object and for a quick run, call the method .run(). 
 
@@ -25,3 +25,5 @@ Below is the result's plot. Walls are colored in gray and best Path in brown:
 
 Below is Exemplified a 50 by 50 maze as a gif:
 ![](Example.gif)
+
+For more references, try dijkstra algorithm, A* search etc.
