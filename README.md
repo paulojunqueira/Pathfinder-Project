@@ -26,4 +26,4 @@ Below is the result's plot. Walls are colored in gray and best Path in brown:
 Below is Exemplified a 50 by 50 maze as a gif:
 ![](Example.gif)
 
-For more references, try dijkstra algorithm, A* search etc.
+For more references, try Dijkstra algorithm, A* search etc.
