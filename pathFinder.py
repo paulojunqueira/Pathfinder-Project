@@ -10,6 +10,7 @@ import matplotlib.cm as cm
 plt.rcParams.update({'figure.max_open_warning': 0})
 
 class PathFinderClass:
+    """ A Pathfinder Algorithm   """
     def __init__(self,shape,start,end):
         
         # Error handler (Beta)
@@ -29,6 +30,7 @@ class PathFinderClass:
 
     # method for quick run. Can be set number of walls and to show or not distance values from start
     def run(self, nWalls=0, showDistValues = True):
+        """ A pre-defined configuration to run the algorithm based on the maze created"""
         self.resetMaze()
         self.randWalls(nWalls)
         distancesMap = self.calcDistances()
@@ -40,11 +42,13 @@ class PathFinderClass:
 
     #Method for reseting the maze map characteristics
     def resetMaze(self):
+        """Resets the maze to its original state """
         self.maze = np.zeros(self.shape)
         self.walls = []
 
     # Calculates all distances from start point
     def calcDistances(self, saveFig = False):
+        """Calculates distances from start point """
         openNodes = [self.start]
         checkedNodes = []
         inf = float("inf")
@@ -74,7 +78,7 @@ class PathFinderClass:
 
     #Method to generate random walls at the maze (Beta Solution) 
     def randWalls(self, nBlocks):
-        
+        """Generate random walls at the maze"""
         # Error handle (Beta)
         if nBlocks >= self.shape[0]*self.shape[1]:
             print("ERROR! - Number of walls must be smaller than the max number of tiles")
@@ -93,6 +97,7 @@ class PathFinderClass:
 
     #Calculates the best path from end to start (must have calculated the distances)
     def calcPath(self, saveFig = False):
+        """Calculates the best Path from end to start """
         self.bestPath = []
         self.costPath = self.maze[self.end]
         
@@ -127,7 +132,7 @@ class PathFinderClass:
 
     # Method to plot the final map and the path 
     def plotMap(self,showValues = True):
-        
+        """Plots final maze and the related path """
         #Heatmap and path colors
         cmap = plt.cm.rainbow
         norm = plt.Normalize(self.maze.min(), self.maze.max())
